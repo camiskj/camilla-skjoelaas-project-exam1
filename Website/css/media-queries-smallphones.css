@@ -1,0 +1,50 @@
+@media only screen and (max-width: 340px){
+
+  .front-detail-text {
+    font-size: 0.8em;
+  }
+
+  .rocket-img img {
+    height: 150px;
+  }
+
+  .upcoming {
+    padding-top: 100px;
+  }
+
+  .counter-slider, .detail-container {
+    padding-top: 65px;
+  }
+
+  .count-number {
+    margin: 0;
+    font-size: 3em;
+  }
+
+  .call-to-action {
+    padding: 0 20px;
+    margin-top: -10px;
+  }
+
+  .call-to-action button {
+    padding: 5px 10px;
+    font-size: 1em;
+  }
+
+  .arrow-right {
+    bottom: 2vh;
+  }
+
+  .arrow-left {
+    bottom: 2vh;
+  }
+
+  .form-label {
+    margin-bottom: 1px;
+  }
+
+  #name, #mail, #textarea {
+    width: 100%;
+  }
+
+}

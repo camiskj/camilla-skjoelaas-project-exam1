@@ -1,0 +1,247 @@
+/* Images:
+https://pixabay.com/photos/galaxy-star-infinity-cosmos-dark-3608029/
+https://pixabay.com/photos/space-galaxy-big-bang-outer-space-11188/
+https://www.pexels.com/nb-no/bilde/astrologi-astronomi-bakgrunnsbilde-hd-bakgrunnsbilde-956981/*/
+
+:root {
+  --darkblue: #0F2030;
+  --lightblue: #00A9D1;
+  --darkpurple: #43142D;
+  --lightpurple: #944455;
+  --yellow: #FECA71;
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--darkblue);
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  margin: 100px 0px 0px 0px;
+}
+
+header {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18vw;
+  font-weight: lighter;
+  margin: 0;
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.h1-index-one {
+  display: block;
+  font-size: 1.07em;
+  margin-bottom: -25px;
+  background: -webkit-linear-gradient(left, var(--lightblue), var(--lightpurple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.h1-index-one span {
+  font-family: 'Raleway', sans-serif;
+}
+
+.h1-index-two {
+  display: block;
+  font-size: 1.47em;
+  margin-bottom: -30px;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+.h1-upcoming-launches, .h1-previous-launches {
+  display: block;
+  font-size: 0.95em;
+  margin-bottom: -25px;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+.h1-mission-name {
+  display: block;
+  color: var(--lightblue);
+  font-size: 1em;
+  margin-top: -30px;
+}
+
+.h1-details-mission-name {
+  text-align: left;
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 20vw;
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+  color: var(--yellow);
+  margin: 0;
+}
+
+.hide-on-desktop {
+  font-size: 10vw;
+  margin-bottom: 10px;
+}
+
+.h2-secondslide {
+  font-size: 10vw;
+  text-transform: uppercase;
+  color: var(--lightpurple);
+  display: block;
+  margin-top: -20px;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+.spaceX {
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: all 0.5s ease-in-out;
+  color: #fff;
+}
+
+h3, .h1-details {
+  font-size: 17vw;
+  text-transform: uppercase;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  color: #fff;
+  margin: 0;
+}
+
+.h1-details {
+  background: -webkit-linear-gradient(left, var(--lightblue), var(--lightpurple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+  display: block;
+  margin-bottom: -20px;
+}
+
+/* Navigation */
+
+#page-mask {
+  display: none;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.navigation {
+  overflow: hidden;
+  position: absolute;
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.menu-btn {
+  padding: 10px 20px;
+  background-color: var(--yellow);
+  cursor: pointer;
+  color: #000;
+  z-index: 3;
+  position: fixed;
+  border: 0;
+  top: 20px;
+  right: 0;
+  font-size: 1.2em;
+  transition: all 0.5s ease-in-out;
+  outline: none;
+}
+
+.sliding-in {
+  background-color: #000;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+  right: -100%;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+  top: 0;
+  position: absolute;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+li a:link, li a:visited {
+  display: block;
+  border-bottom: 1px dotted #606060;
+  padding: 10px 0;
+  margin: 10px 25px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+li a:hover, li a:active {
+  color: #a9a9a9;
+  border-bottom: 1px solid #606060;
+}
+
+li a:link.active, li a:visited.active {
+  color: #a9a9a9;
+  border-bottom: 1px solid #606060;
+  font-weight: bold;
+}
+
+.spaceX a:link, .spaceX a:visited {
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.spaceX a:hover, .spaceX a:active {
+  color: #a9a9a9;
+}
+
+/* Loader */
+
+.loader {
+    margin: 20px auto;
+    border: 3px solid #808080;
+    border-left: 3px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

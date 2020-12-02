@@ -1,0 +1,172 @@
+@media only screen and (min-width: 500px) and (max-width: 800px){
+
+  body {
+    overflow: auto;
+  }
+
+  .navigation, .sliding-in {
+    width: 300px;
+  }
+
+  h1 {
+    font-size: 5.5em;
+    margin: 0;
+  }
+
+  .h1-index-one {
+    font-size: 1.07em;
+    margin: 0 auto;
+    margin-bottom: -40px;
+    width: 400px;
+  }
+
+  .h1-index-two {
+    display: block;
+    font-size: 1.47em;
+    margin-bottom: -40px;
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+  }
+
+  .h1-upcoming-launches, .h1-previous-launches {
+    font-size: 0.95em;
+    margin-bottom: -25px;
+  }
+
+  .h1-details-mission-name {
+    text-align: left;
+    font-size: 2.7em;
+    margin-bottom: 20px;
+    width: 450px;
+  }
+
+  h2, h3 {
+    font-size: 6em;
+  }
+
+  .h2-secondslide {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  .h1-details {
+    font-size: 2.5em;
+  }
+
+  .upcoming {
+    position: relative;
+    top: 0;
+    padding-top: 20px;
+    height: 90vh;
+  }
+
+  .count-container, .detail-wrapper {
+    overflow: auto;
+    position: relative;
+    visibility: visible;
+  }
+
+  .counter-slider {
+    background: -webkit-linear-gradient(var(--darkblue), var(--darkpurple));
+    position: static;
+    padding: 150px 0 0 0;
+  }
+
+  .detail-container {
+    background: -webkit-linear-gradient(var(--darkpurple), var(--lightblue));
+    position: static;
+    padding: 130px 20px 0 20px;
+  }
+
+  .arrow-down-desktop{
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    font-size: 3em;
+    width: inherit;
+    text-align: center;
+  }
+
+  .arrow-down-text {
+    font-size: 0.3em;
+    margin: 0;
+  }
+
+  .arrow-down-desktop a:link, .arrow-down-desktop a:visited {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .arrow-down-desktop a:hover, .arrow-down-desktop a:active {
+    color: var(--yellow);
+    transform: translateY(2px);
+  }
+
+  .button-previous, .button-rockets {
+    display: inline-block;
+  }
+
+  .counter {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .count-number {
+    font-size: 4em;
+  }
+
+  .split-counter, .arrow-left, .arrow-right, .hide-on-desktop {
+    display: none;
+  }
+
+  .image-index {
+    display: block;
+  }
+
+  .image-index img, #name, #mail, #textarea {
+    width: 100%;
+  }
+
+  .mission-name-upcoming {
+    font-size: 3em;
+  }
+
+  .launch-date, .rocket-facts {
+    margin-bottom: 0;
+  }
+
+  .flex-form {
+    display: flex;
+    gap: 20px;
+  }
+
+  .contact-form-input {
+    flex: 1;
+  }
+
+  .form-label {
+    display: block;
+    margin-bottom: 1px;
+  }
+
+  .error-name {
+    top: 0;
+    right: 52%;
+  }
+
+  .error-mail {
+    top: 0;
+    right: 22px;
+  }
+
+  .rocket-img {
+    margin-top: 40px;
+  }
+}

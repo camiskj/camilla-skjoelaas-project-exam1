@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Watch the countdown to SpaceX next rocket launch. Will it be a success? Browse previous and upcoming launches - and what is the size of a Falcon 9 rocket?">
+    <meta name="description" content="Watch the countdown to SpaceX next rocket launch. Learn about previous launches and the rockets used.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000">
+    <meta name="author" content="Camilla Skjølås">
+    <title>SpaceX</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/launches.css" rel="stylesheet" />
+    <link href="css/media-queries-desktop.css" rel="stylesheet" />
+    <link href="css/media-queries-tablets.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+    <header>
+      <p class="spaceX"><a href="index.html">SpaceX</a></p>
+    </header>
+
+    <nav>
+      <button class="menu-btn"><i class="las la-bars"></i></button>
+      <div class="navigation">
+        <div class="sliding-in">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upcoming-launches.html">Upcoming launches</a></li>
+            <li><a href="previous-launches.html" class="active">Previous launches</a></li>
+            <li><a href="rockets.html">Rockets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="navigator">
+        <a href="previous-launches.html">Previous launches</a> -
+      </div>
+      <div class="details-container">
+        <div id="infobox">
+          <div class="loader"></div>
+        </div>
+      </div>
+    </main>
+
+    <div id="page-mask"></div>
+
+    <script src="js/launch-details.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

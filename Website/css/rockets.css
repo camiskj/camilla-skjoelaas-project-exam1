@@ -1,0 +1,120 @@
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+}
+
+.rocket-wrapper {
+  position: absolute;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  padding-top: 15vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/space2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.rocket-container {
+  margin-bottom: 30px;
+  margin-top: 100vh;
+}
+
+.rocket-img {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  font-size: 0.7em;
+}
+
+.rocket-img img {
+  height: 250px;
+}
+
+.rocket-img img:hover {
+  transform: translateY(-5px);
+}
+
+.falcon1 {
+  flex: 0.7;
+  animation: 0.2s ease both slide;
+}
+
+.falcon9, .falconheavy, .starship {
+  flex: 1;
+  animation: 0.2s ease both slide;
+}
+
+.falcon9 {
+  animation-delay: 0.3s;
+}
+
+.falconheavy {
+  animation-delay: 0.6s;
+}
+
+.starship {
+  animation-delay: 0.9s;
+}
+
+@keyframes slide {
+  0% {
+		transform: translateY(600px);
+	}
+
+  90%  {
+    transform: translateY(-50px);
+  }
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+.rocket-items {
+  position: relative;
+  padding: 20px;
+}
+
+.rocket-facts {
+  margin: 20px 0 90px 0;
+}
+
+.rocket-facts p {
+  margin: 0;
+}
+
+.rocket-name {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 3em;
+  color: var(--lightpurple);
+}
+
+.arrow-down-text-rockets {
+  font-size: 0.3em;
+  margin: 0;
+}
+
+.arrow-down-rockets {
+  position: absolute;
+  font-size: 3em;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  bottom: 20px;
+}
+
+.arrow-down-rockets a:link, .arrow-down-rockets a:visited {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-down-rockets a:hover, .arrow-down-rockets a:active {
+  color: var(--yellow);
+  transform: translateY(2px);
+}

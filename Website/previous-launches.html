@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Watch the countdown to SpaceX next rocket launch. Will it be a success? Browse previous and upcoming launches - and what is the size of a Falcon 9 rocket?">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000">
+    <title>SpaceX | Previous launches</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/launches.css" rel="stylesheet" />
+    <link href="css/media-queries-desktop.css" rel="stylesheet" />
+    <link href="css/media-queries-tablets.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <p class="spaceX"><a href="index.html">SpaceX</a></p>
+    </header>
+
+    <nav>
+      <button class="menu-btn"><i class="las la-bars"></i></button>
+      <div class="navigation">
+        <div class="sliding-in">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upcoming-launches.html">Upcoming launches</a></li>
+            <li><a href="previous-launches.html" class="active">Previous launches</a></li>
+            <li><a href="rockets.html">Rockets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="title">
+        <h1><span class="h1-previous-launches">Previous</span> launches</h1>
+        <div class="arrow-down-launches">
+          <a href="#launches"><p class="arrow-down-text-launches">Browse through</p>
+          <i class="las la-angle-down"></i></a>
+        </div>
+      </div>
+
+      <a id="launches">
+      <div class="sorting">
+        <select name="sortby" class="sortby">
+          <option value="ascending">Ascending</option>
+          <option value="descending">Decending</option>
+        </select>
+      </div>
+
+      <div class="launch-container">
+        <div class="loader"></div>
+      </div>
+
+      <div class="top-navigator">
+        <a href="#top"><i class="las la-angle-up"></i></a>
+      </div>
+    </main>
+
+    <div id="page-mask"></div>
+
+    <script src="js/pastlaunches.js"></script>
+    <script src="js/top-arrow.js"></script>
+    <script src="js/navigation.js"></script>
+  </body>
+</html>

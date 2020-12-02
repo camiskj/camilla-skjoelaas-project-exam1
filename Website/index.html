@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Watch the countdown to SpaceX next rocket launch. Will it be a success? Browse previous and upcoming launches - and what is the size of a Falcon 9 rocket?">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000">
+    <meta name="author" content="Camilla Skjølås">
+    <title>SpaceX next mission</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,900;1,900&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+    <link href="css/media-queries-desktop.css" rel="stylesheet" />
+    <link href="css/media-queries-tablets.css" rel="stylesheet" />
+    <link href="css/media-queries-smallphones.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <header>
+      <p class="spaceX"><a href="index.html">SpaceX</a></p>
+    </header>
+
+    <nav>
+      <button class="menu-btn"><i class="las la-bars"></i></button>
+      <div class="navigation">
+        <div class="sliding-in">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="upcoming-launches.html">Upcoming launches</a></li>
+            <li><a href="previous-launches.html">Previous launches</a></li>
+            <li><a href="rockets.html">Rockets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="upcoming">
+        <h1><span class="h1-index-two">Next</span><span class="h1-index-one">Space<span>X</span></span>mission</h1>
+        <div class="arrow arrow-right">
+          <p title="Watch countdown" class="arrow-right-first"><span class="arrow-right-first-txt">Watch countdown</span><i class="las la-angle-right"></i></p>
+        </div>
+        <div class="arrow-down-desktop">
+          <a href="#counter"><p class="arrow-down-text">Watch countdown</p>
+          <i class="las la-angle-down"></i></a>
+        </div>
+      </div>
+
+      <div class="image-index">
+        <img src="images/spacex-1.jpg" alt="SpaceX Starlink Mission" title="Image Starlink Mission is taken from &copy; Official SpaceX Photos, source: https://www.flickr.com/photos/spacex/50009748327/. License: https://creativecommons.org/licenses/by-nc/2.0/">
+      </div>
+
+      <a id="counter">
+      <div class="count-container">
+        <div class="counter-slider">
+          <div class="name-of-next-mission"></div>
+          <div class="counter"></div>
+          <div class="arrow arrow-left">
+            <p title="Previous" class="arrow-left-second"><span class="arrow-left-second-txt">Previous</span><i class="las la-angle-left"></i></p>
+          </div>
+          <div class="arrow arrow-right">
+            <p title="View details" class="arrow-right-second"><span class="arrow-right-second-txt">View details</span><i class="las la-angle-right"></i></p>
+          </div>
+          <div class="arrow-down-desktop">
+            <a href="#details"><p class="arrow-down-text">View details</p>
+            <i class="las la-angle-down"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="image-index change-bg">
+        <img src="images/spacex-2.jpg" alt="SpaceX Starlink Mission" title="Image Starlink Mission is taken from &copy; Official SpaceX Photos, source: https://www.flickr.com/photos/spacex/50428228397/. Licence: https://creativecommons.org/licenses/by-nc/2.0/">
+      </div>
+
+      <a id="details">
+      <div class="detail-wrapper">
+        <div class="detail-container">
+          <div id="infobox">
+            <h3>Details</h3>
+          </div>
+          <div class="call-to-action">
+            <a href="upcoming-launches.html"><button>More upcoming launches</button></a>
+            <a href="previous-launches.html"><button class="button-previous">Previous launches</button></a>
+            <a href="rockets.html"><button class="button-rockets">SpaceX rockets</button></a>
+          </div>
+          <div class="arrow arrow-left">
+            <p title="Previous" class="arrow-left-first"><span class="arrow-left-first-txt">Previous</span><i class="las la-angle-left"></i></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="page-mask"></div>
+
+    <script src="js/upcoming.js"></script>
+    <script src="js/timer.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
